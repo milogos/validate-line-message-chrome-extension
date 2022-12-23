@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "LINE API Validater",
+  "description": "Chrome Extension Sample",
+  "version": "1.0",
+  "action": {
+    "default_popup": "./dist/index.html"
+  },
+  "host_permissions": ["<all_urls>"]
+}
