@@ -6,6 +6,5 @@
   "action": {
     "default_popup": "./dist/index.html"
   },
-  "permissions": ["storage"],
-  "host_permissions": ["<all_urls>"]
+  "permissions": ["storage"]
 }
