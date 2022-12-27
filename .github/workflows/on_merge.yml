@@ -23,10 +23,11 @@ jobs:
       - uses: fregante/daily-version-action@v2
         id: daily-version
       - name: build
-        run: npm run build
+        run: |
+          yarn export
       - name: Update manifest.json
         run: |
-          npx dot-json@1 dist/manifest.json version ${{ steps.daily-version.outputs.version }}
+          npx dot-json@1 extensions/manifest.json version ${{ steps.daily-version.outputs.version }}
       - name: Archive
         run: |
           zip extension.zip ./extensions/*
